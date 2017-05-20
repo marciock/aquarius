@@ -1,32 +1,28 @@
 <?php
 
-namespace Lib\StyleScripts;
+namespace Lib\ServiceManager;
 
 /**
 * 
 */
-class Source extends \ArrayObject
+class Sources extends \ArrayObject
 {
 	//private $attributes=[];
 	
 	public function __construct(Array $script)
 	{
-
-
-		foreach ($script as $key  => $value) {
+		foreach ($script as $key=>$value) {
 			
 			
-				$this->append($key,$value);
+				$this->append($value);
 			
 		}
 
-		//return $this->getAttributes();
-
-		return $this;
+		return $this->getAttributes();
 	}
 
 	
-/*
+
 	protected function getAttributes(){
 
 		$attr=[];
@@ -52,5 +48,6 @@ class Source extends \ArrayObject
 		return ' ';
 	}
 */
+
 
 }

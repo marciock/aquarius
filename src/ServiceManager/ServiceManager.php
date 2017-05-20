@@ -1,16 +1,20 @@
 <?php
 
 
-
-namespace Lib\Markup\Materialize;
-use Lib\Markup\Materialize\BuilderComponents;
-class Materialize
+namespace Lib\ServiceManager;
+use Lib\ServiceManager\ServiceBuilder;
+class ServiceManager
 {
-	public  function builder($method, $params){
+	
+	//public function run($url);
+	public  function builder($method, array $params){
 
-		$tag=(new BuilderComponents)
+
+		$tag=(new ServiceBuilder)
 		->params($params)
 		->call($method);
+
+
 
 		return $tag;
 	}

@@ -4,8 +4,10 @@
 		"psr-4":{
 
 			"Lib\\":"src/",
-			"Modules\\":",modules/"
+			"Modules\\":"modules/",
+			"Models\\":"models/"
 			
 		}
+	
 	}
 }
